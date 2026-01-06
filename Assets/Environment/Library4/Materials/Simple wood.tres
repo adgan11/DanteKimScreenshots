@@ -12,5 +12,7 @@ metallic_texture = ExtResource("2_tfmj7")
 metallic_texture_channel = 2
 roughness_texture = ExtResource("2_tfmj7")
 roughness_texture_channel = 1
+roughness = 0.65
+specular = 0.35
 normal_enabled = true
 normal_texture = ExtResource("3_amqjn")
