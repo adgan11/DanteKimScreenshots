@@ -10,5 +10,5 @@ metallic_texture = ExtResource("1_8l5pw")
 metallic_texture_channel = 2
 roughness_texture = ExtResource("1_8l5pw")
 roughness_texture_channel = 1
-roughness = 0.72
-specular = 0.22
+roughness = 0.85
+specular = 0.1

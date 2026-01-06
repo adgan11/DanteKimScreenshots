@@ -5,20 +5,25 @@
 
 [sub_resource type="Environment" id="Environment_1qg5g"]
 background_mode = 2
+background_color = Color(1, 1, 1, 1)
+background_energy_multiplier = 16.0
 ambient_light_source = 2
-ambient_light_color = Color(0.7602972, 0.76029724, 0.7602972, 1)
-ambient_light_energy = 2.12
+ambient_light_color = Color(0.9372549, 0.7882353, 0.68235296, 1)
+ambient_light_energy = 0.19
 tonemap_mode = 1
-tonemap_exposure = 0.83
+tonemap_exposure = 1.55
+tonemap_white = 1.17
+ssr_enabled = true
+ssr_fade_in = 0.5223305
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xjjcb"]
 shader = ExtResource("2_xjjcb")
-shader_parameter/brightness = 0.85
-shader_parameter/saturation = 1.3170000625575
-shader_parameter/tint_color = Color(0.9372549, 0.7882353, 0.68235296, 1)
-shader_parameter/tint_strength = 0.454000021565
-shader_parameter/contrast = 1.18800005643
-shader_parameter/grain_amount = 0.10000000149012
+shader_parameter/brightness = 0.96
+shader_parameter/saturation = 0.92
+shader_parameter/tint_color = Color(0.98, 0.9, 0.82, 1)
+shader_parameter/tint_strength = 0.22
+shader_parameter/contrast = 0.92
+shader_parameter/grain_amount = 0.02
 shader_parameter/animate_grain = false
 
 [node name="Library4" instance=ExtResource("1_whsp1")]
@@ -49,6 +54,7 @@ far = 1000.0
 
 [node name="Lamp_Light_1" type="OmniLight3D" parent="." index="17"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 1.280896, 0.8542972, 2.528687)
+visible = false
 light_color = Color(1, 0.8, 0.6, 1)
 light_energy = 16.0
 light_specular = 0.12
@@ -58,6 +64,7 @@ omni_range = 1.865
 
 [node name="Lamp_Light_1_001" type="OmniLight3D" parent="." index="18"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -1.066462, 0.8542972, 2.5318916)
+visible = false
 light_color = Color(1, 0.8, 0.6, 1)
 light_energy = 16.0
 light_specular = 0.12
@@ -66,14 +73,15 @@ omni_attenuation = 1.35
 
 [node name="Lamp_Light_1_002" type="OmniLight3D" parent="." index="19"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 1.2873352, 0.8542972, 6.3070807)
+visible = false
 light_color = Color(1, 0.8, 0.6, 1)
-light_energy = 6.928
+light_energy = 16.0
 light_specular = 0.12
 omni_range = 1.6
-omni_attenuation = 1.35
 
 [node name="Lamp_Light_1_003" type="OmniLight3D" parent="." index="20"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -1.0600228, 0.8542972, 6.3102856)
+visible = false
 light_color = Color(1, 0.8, 0.6, 1)
 light_energy = 7.18
 light_specular = 0.12
@@ -82,6 +90,7 @@ omni_attenuation = 1.35
 
 [node name="Lamp_Light_1_004" type="OmniLight3D" parent="." index="21"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 1.2860713, 0.8542972, 10.078499)
+visible = false
 light_color = Color(1, 0.8, 0.6, 1)
 light_energy = 11.057
 light_specular = 0.12
@@ -90,6 +99,7 @@ omni_attenuation = 1.35
 
 [node name="Lamp_Light_1_005" type="OmniLight3D" parent="." index="22"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -1.0612867, 0.8542972, 10.081703)
+visible = false
 light_color = Color(1, 0.8, 0.6, 1)
 light_energy = 8.912
 light_specular = 0.12
@@ -203,7 +213,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7252347, 12.298862)
 light_size = 0.566
 light_specular = 0.1
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." index="39"]
+[node name="Warm_Pink_Fill" type="OmniLight3D" parent="." index="39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.2, 1.6)
+light_color = Color(1, 0.78, 0.82, 1)
+light_energy = 0.22
+light_specular = 0.15
+omni_range = 6.0
+omni_attenuation = 1.2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="40"]
 visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" index="0"]

@@ -4,4 +4,5 @@
 resource_name = "white"
 cull_mode = 2
 albedo_color = Color(0.544297, 0.544297, 0.544297, 1)
-roughness = 0.5
+roughness = 0.85
+specular = 0.1
