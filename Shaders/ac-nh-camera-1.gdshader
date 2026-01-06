@@ -53,7 +53,10 @@ void fragment() {
     
     // 5. VIGNETTE (Darker corners for cozy feel)
     float dist = distance(uv, vec2(0.5));
-    col *= 1.0 - (dist * 0.25);
+    col *= 1.0 - (dist * 0.2);
+
+    // 6. Soft haze to lift the overall value range
+    col = mix(col, vec3(0.6), 0.02);
 
     COLOR = vec4(col, 1.0);
 }
