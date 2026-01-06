@@ -5,10 +5,10 @@
 [resource]
 resource_name = "Stylized Wood.002"
 cull_mode = 2
-albedo_color = Color(0.4, 0.26, 0.18, 1)
+albedo_color = Color(0.43, 0.29, 0.2, 1)
 metallic_texture = ExtResource("1_8l5pw")
 metallic_texture_channel = 2
 roughness_texture = ExtResource("1_8l5pw")
 roughness_texture_channel = 1
-roughness = 0.75
-specular = 0.25
+roughness = 0.72
+specular = 0.22

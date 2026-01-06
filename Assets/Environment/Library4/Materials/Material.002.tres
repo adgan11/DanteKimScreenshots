@@ -4,4 +4,5 @@
 resource_name = "Material.002"
 cull_mode = 2
 albedo_color = Color(0.74049443, 0.5388027, 0.42890835, 1)
-roughness = 0.65
+roughness = 0.62
+specular = 0.22

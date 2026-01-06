@@ -6,7 +6,7 @@
 resource_name = "Stylized Wood-Table"
 cull_mode = 2
 albedo_texture = ExtResource("1_8f1t1")
-albedo_color = Color(0.95, 0.91, 0.86, 1)
+albedo_color = Color(0.82, 0.7, 0.58, 1)
 metallic = 0.03
-roughness = 0.6
-specular = 0.3
+roughness = 0.58
+specular = 0.25
